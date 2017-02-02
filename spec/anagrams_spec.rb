@@ -59,5 +59,15 @@ context 'with short anagrams' do
       expect(third_anagram?(short_false1, short_false2)).to be(false)
     end
   end
+
+  describe '#fourth_anagram?' do
+    it 'returns true for fourth_anagrams' do
+      expect(fourth_anagram?(short1, short2)).to be(true)
+    end
+
+    it 'returns false for non-fourth_anagrams' do
+      expect(fourth_anagram?(short_false1, short_false2)).to be(false)
+    end
+  end
 end
 
