@@ -21,6 +21,12 @@ context 'with long anagrams' do
       expect(third_anagram?(long1, long2)).to be(true)
     end
   end
+
+  describe '#fourth_anagram' do
+    it 'recognize true anagrams' do
+      expect(fourth_anagram?(long1, long2)).to be(true)
+    end
+  end
 end
 
 context 'with short anagrams' do

@@ -25,5 +25,11 @@ def third_anagram?(word1, word2)
 end
 
 def fourth_anagram?(word1, word2)
-  
+  hash1 = Hash.new { |h, k| h[k] = 0 }
+  hash2 = Hash.new { |h, k| h[k] = 0 }
+
+  word1.chars.each { |char| hash1[char] += 1 }
+  word2.chars.each { |char| hash2[char] += 1 }
+
+  hash1 == hash2
 end
