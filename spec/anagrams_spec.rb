@@ -19,3 +19,13 @@ describe '#second_anagram?' do
     expect(second_anagram?("gizmo", "sally")).to be(false)
   end
 end
+
+describe '#third_anagram?' do
+  it 'returns true for third_anagrams' do
+    expect(third_anagram?("elvis", "lives")).to be(true)
+  end
+
+  it 'returns false for non-third_anagrams' do
+    expect(third_anagram?("gizmo", "sally")).to be(false)
+  end
+end

@@ -9,3 +9,7 @@ def second_anagram?(word1, word2)
   word1.chars.each { |char| word2.delete!(char) }
   word2.empty?
 end
+
+def third_anagram?(word1, word2)
+  
+end
